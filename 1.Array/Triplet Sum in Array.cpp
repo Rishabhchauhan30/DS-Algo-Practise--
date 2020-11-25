@@ -10,9 +10,7 @@ int main()
         cin>>n>>x;
         int arr[n];
         for(int i=0; i<n; i++)
-        {
             cin>>arr[i];
-        }
         int l,r;
         sort(arr,arr+n);
         bool flag = false;
@@ -28,12 +26,9 @@ int main()
                     flag = true;
                     break;
                 }else if(arr[i]+arr[l]+arr[r] < x)
-                {
                     l++;
-                }else
-                {
-                    r--;
-                }    
+                else
+                    r--; 
             }
             if(flag)    break;
         }
