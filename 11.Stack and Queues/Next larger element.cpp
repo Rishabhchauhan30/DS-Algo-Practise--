@@ -1,3 +1,4 @@
+# O(n)
 vector <long long> nextLargerElement(long long arr[], int n){
     // Your code here
     vector <long long> v;
