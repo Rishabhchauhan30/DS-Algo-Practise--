@@ -118,4 +118,17 @@ int main(){
     }
 return 0;
 }
-
+ ------------------------------------------------------------------------------------------------------------------------------
+  Another approaches are:
+        Basic approach: 
+            A simple solution is to one by one consider all bars as starting points and calculate area of all rectangles starting with every bar. 
+            Finally return maximum of all possible areas.
+            Time complexity of this solution would be O(n^2)
+ -------------------------------------------------------------------------------------------------------------------------------------
+        Better approach:
+            We can use Divide and Conquer to solve this in O(nLogn) time. The idea is to find the minimum value in the given array. 
+            Once we have index of the minimum value, the max area is maximum of following three values.
+            a) Maximum area in left side of minimum value (Not including the min value)
+            b) Maximum area in right side of minimum value (Not including the min value)
+            c) Number of bars multiplied by minimum value.
+ --------------------------------------------------------------------------------------------------------------------------------------
