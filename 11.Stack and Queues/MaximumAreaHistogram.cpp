@@ -23,7 +23,7 @@ vector<int> NSL(int arr[], int n) {
 
         if(arr[i] < s.top().first) {
 
-            while(!s.empty() && arr[i] < s.top().first) 
+            while(!s.empty() && arr[i] <= s.top().first) 
                 s.pop();
 
             if(s.empty()) {
@@ -62,7 +62,7 @@ vector<int> NSR(int arr[], int n) {
         }
 
         if(arr[i] < s.top().first) {
-            while(!s.empty() && arr[i] < s.top().first)
+            while(!s.empty() && arr[i] <= s.top().first)
                 s.pop();
 
             if(s.empty()) {
